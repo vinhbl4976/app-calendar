@@ -1,7 +1,7 @@
 #cal-date {
   margin: 10px 0;
 }
-#cal-mth, #cal-yr, #cal-set {
+#cal-month, #cal-year, #cal-set {
   padding: 10px;
   font-size: 1.2em;
   border: 0;
