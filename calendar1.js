@@ -8,8 +8,8 @@ var cal = {
   sMon : false, 
   
   list : function () {
-    cal.sMth = parseInt(document.getElementById("cal-mth").value); 
-    cal.sYear = parseInt(document.getElementById("cal-yr").value); 
+    cal.sMth = parseInt(document.getElementById("cal-month").value); 
+    cal.sYear = parseInt(document.getElementById("cal-year").value); 
     var daysInMth = new Date(cal.sYear, cal.sMth+1, 0).getDate(), 
         startDay = new Date(cal.sYear, cal.sMth, 1).getDay(), 
         endDay = new Date(cal.sYear, cal.sMth, daysInMth).getDay(); 
@@ -133,7 +133,7 @@ window.addEventListener("load", function () {
       nowYear = parseInt(now.getFullYear());
 
   
-  var month = document.getElementById("cal-mth");
+  var month = document.getElementById("cal-month");
   for (var i = 0; i < 12; i++) {
     var opt = document.createElement("option");
     opt.value = i;
@@ -142,7 +142,7 @@ window.addEventListener("load", function () {
     month.appendChild(opt);
   }
 
-  var year = document.getElementById("cal-yr");
+  var year = document.getElementById("cal-year");
   for (var i = nowYear-10; i<=nowYear+10; i++) {
     var opt = document.createElement("option");
     opt.value = i;
